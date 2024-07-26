@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const postRoutes = require('./api/routes/posts');
 const commentRoutes = require('./api/routes/comments');
 const userRoutes = require('./api/routes/user');
-
+//mongodb connection to create a database
 mongoose.connect('mongodb://127.0.0.1:27017/node-blog', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
