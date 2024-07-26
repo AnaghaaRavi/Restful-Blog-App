@@ -9,7 +9,7 @@ const upload = multer({dest: 'uploads/'});
 
 
 const Post = require('../models/post');
-
+//to get all posts
 router.get('/', (req,res,next) => {
     Post.find()
     .select('name postContent _id postImage')
