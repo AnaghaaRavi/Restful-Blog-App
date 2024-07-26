@@ -1,0 +1,6 @@
+{
+    "env":{
+        "MONGO_COMPASS_PW": "node-blog",
+        "JWT_KEY": "secret"
+    }
+}
