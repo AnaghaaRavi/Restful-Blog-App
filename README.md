@@ -150,11 +150,11 @@ The API can be accessed at `http://localhost:3000`. Use tools like Postman or cU
 ## Authentication
 
 JWT (JSON Web Tokens) is used for user authentication. Upon successful login, a token is provided which must be included in the `Authorization` header for endpoints that require authentication.
-##Documentation
+## Documentation
 API documentation is provided using Postman. You can access the documentation at http://localhost:3000/api-docs.
 
-##Technologies Used
-Programming Language: Node.js
-Framework: Express
-Database: MongoDB
-Authentication: JWT
+## Technologies Used
+- Programming Language: Node.js
+- Framework: Express
+- Database: MongoDB
+- Authentication: JWT
