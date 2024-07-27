@@ -1,4 +1,4 @@
-//This file is to check for authorization befor accessing any post or comment
+//This file is to check for authorization before accessing any post or comment
 //The token obtained is unique and is used to access posts and comments
 const jwt = require('jsonwebtoken');
 

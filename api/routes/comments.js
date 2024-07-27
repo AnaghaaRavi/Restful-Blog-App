@@ -5,7 +5,7 @@ const checkAuth = require('../middleware/check-auth');
 
 const Comment = require('../models/comment');
 const Post = require('../models/post');
-
+//to access all the comments
 router.get('/', checkAuth, (req, res, next) => {
     Comment.find()
         .select('post content _id')
@@ -33,7 +33,7 @@ router.get('/', checkAuth, (req, res, next) => {
             });
         });
 });
-
+//to post a comment
 router.post('/', checkAuth, (req, res, next) => {
     Post.findById(req.body.postId)
         .then(post => {
@@ -65,7 +65,7 @@ router.post('/', checkAuth, (req, res, next) => {
             });
         });
 });
-
+//to veiw a particular comment
 router.get('/:commentId', checkAuth, (req, res, next) => {
     Comment.findById(req.params.commentId)
         .populate('post')
@@ -90,7 +90,7 @@ router.get('/:commentId', checkAuth, (req, res, next) => {
             });
         });
 });
-
+//to delete a comment
 router.delete('/:commentId', checkAuth, (req, res, next) => {
     Comment.deleteOne({ _id: req.params.commentId })
         .exec()
@@ -111,7 +111,7 @@ router.delete('/:commentId', checkAuth, (req, res, next) => {
         });
 });
 
-// Add PUT method to update a comment
+// to update a comment
 router.put('/:commentId', checkAuth, (req, res, next) => {
     const id = req.params.commentId;
     const updateOps = {};
