@@ -1,7 +1,7 @@
 # Blog Application API
 
 This is a RESTful API for a blog application developed using Node.js, Express, and MongoDB. The API allows users to create, read, update, and delete blog posts, as well as manage comments on the posts.
-
+ 
 
 ## Table of Contents
 
