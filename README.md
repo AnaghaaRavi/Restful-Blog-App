@@ -145,7 +145,7 @@ The API can be accessed at `http://localhost:3000`. Use tools like Postman or cU
 
 - `id`
 - `post_id`
-- `content`
+- `content` 
 
 ## Authentication
 
