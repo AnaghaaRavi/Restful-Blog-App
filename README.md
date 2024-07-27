@@ -117,7 +117,7 @@ The API can be accessed at `http://localhost:3000`. Use tools like Postman or cU
 
 - **Register**
     ```http
-    POST /register
+    POST /signup
     ```
 
 - **Login**
